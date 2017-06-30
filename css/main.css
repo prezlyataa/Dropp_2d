@@ -121,21 +121,29 @@ body,
 }
 .navbar .navbar-nav .active_link, .navbar .navbar-nav .active_link:hover, .navbar .navbar-nav .active_link:focus,
 .home h2,
-.home button {
+.home button,
+.info,
+.contact_bg button,
+.rights {
     color: #fff;
 }
 
 .navbar .navbar-nav,
 .home button,
 .block_name p,
-.services_tools h3 {
+.services_tools h3,
+.info .member_info h3, .info .skills h3,
+.post_text h2, .post_text .text_date,
+.contact_bg button {
     font-family: Oswald-Bold;
 }
 
 .navbar .navbar-nav,
 .home button,
 .block_name p,
-.services_tools h3 {
+.services_tools h3,
+.post_text h2, .post_text .text_date,
+.contact_bg button {
     text-transform: uppercase;
 }
 
@@ -173,7 +181,8 @@ body,
     padding-bottom: 50px;
 }
 
-.home button {
+.home button,
+.contact_bg button {
     font-size: 32px;
     background-color: #fd5433;
     padding: 15px 50px;
@@ -212,6 +221,153 @@ body,
     padding: 10px 0;
 }
 
+.portfolio {
+    padding-bottom: 30px;
+}
+
+.projects {
+    display: flex;
+    flex-flow: wrap row;
+    justify-content: center;
+}
+
+.projects img {
+    width: 230px;
+    height: 200px;
+}
+
+.about_us .members {
+    padding: 52px 20px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+}
+
+.about_us .info {
+    background: url('../img/bg_info.png');
+}
+
+.about_us .skills ul li {
+    list-style: none;
+}
+
+.info {
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.info .member_info h3, .info .skills h3{
+    font-size: 22px;
+    font-weight: bold;
+    padding-bottom: 50px;
+}
+
+.info a {
+    margin-right: 12px;
+}
+
+.member_info p {
+    font-size: 16px;
+    padding-bottom: 40px;
+}
+
+.bar {
+    padding-top: 5px;
+}
+
+.per_skills .techlogies, .per_skills .bar {
+    width: 33%;
+    float: left;
+}
+.per_skills .percent {
+    float: right;
+}
+
+.per_skills .bar img {
+    margin-bottom: 20px;
+}
+
+.latest_posts {
+    padding-top: 20px;
+    padding-bottom: 75px;
+}
+
+.posts {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+}
+
+.post_block_1, .post_block_2, .post_block_3, .post_block_4 {
+    width: 50%;
+    padding: 75px 5px 5px 5px;
+}
+
+.post_img, .post_text {
+    width: 50%;
+    float: left;
+}
+
+.post_text h2 {
+    font-size: 25px;
+    margin-bottom: 0;
+    margin-top: 0;
+    padding-bottom: 10px;
+}
+
+.post_text p {
+    margin: 0;
+    font-size: 15px;
+}
+
+.post_text .text_info {
+    padding-top: 5px;
+}
+
+.contact_bg {
+    background: url("../img/BG-City.png") no-repeat;
+    background-size: cover;
+    padding-top: 22px;
+}
+
+.areas {
+    padding-bottom: 75px;
+}
+
+.input_name {
+    margin-right: 1%;
+}
+
+.input_email {
+    margin-left: 1%;
+}
+
+.input_name, .input_email {
+    width: 49%;
+    float: left;
+    height: 50px;
+}
+
+.input_name, .input_email, .message {
+    padding-left: 6px;
+    font-size: 20px;
+}
+
+
+.message, .contact_bg button {
+    width: 100%;
+    margin-top: 18px;
+}
+
+.footer {
+    padding-top: 5px;
+    padding-bottom: 15px;
+}
+
+.rights p {
+    font-size: 18px;
+    text-align: center;
+}
 
 
 
@@ -231,7 +387,23 @@ body,
 }
 
 
-@media screen and (max-width: 1050px) {
+@media screen and (max-width: 1172px) {
+    .areas {
+        padding: 20px;
+    }
+}
+
+@media screen and (max-width: 1100px) {
+    .post_img img {
+        height: 75%;
+        width: 75%;
+    }
+    .post_text h2 {
+        font-size: 22px;
+    }
+}
+
+    @media screen and (max-width: 1050px) {
     .home {
         padding-top: 100px;
     }
@@ -268,6 +440,37 @@ body,
     .services_tools {
         padding-bottom: 30px;
     }
+    .bar {
+        padding-top: 5px;
+    }
+    .per_skills .bar .b_1 {
+        width: 170px;
+        height: 10px;
+    }
+    .per_skills .bar .b_2 {
+        width: 165px;
+        height: 10px;
+    }
+    .per_skills .bar .b_3 {
+        width: 120px;
+        height: 10px;
+    }
+    .per_skills .bar .b_4 {
+        width: 127px;
+        height: 10px;
+    }
+    .per_skills .bar .b_5 {
+        width: 102px;
+        height: 10px;
+    }
+    .areas {
+        padding: 20px 20px;
+    }
+
+    .rights p {
+        font-size: 14px;
+    }
+
 }
 
 
@@ -307,6 +510,27 @@ body,
     }
     .services_tools {
         padding-bottom: 30px;
+    }
+    .projects img {
+        width: 205px;
+        height: 175px;
+    }
+    .about_us .members img {
+        width: 153px;
+        height: 153px;
+    }
+    .areas {
+        padding: 20px 20px;
+    }
+    .contact_bg button {
+        font-size: 18px;
+        padding: 6px 28px;
+    }
+    .rights p {
+        font-size: 14px;
+    }
+    .footer {
+        padding: 0 7px 5px 7px;
     }
 }
 
